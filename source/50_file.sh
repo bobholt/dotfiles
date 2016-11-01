@@ -10,9 +10,3 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Easier navigation: .., ..., -
 alias ..='cd ..'
 alias ~='cd ~'
-
-# Fast directory switching
-mkdir -p $DOTFILES/caches/z
-_Z_NO_PROMPT_COMMAND=1
-_Z_DATA=$DOTFILES/caches/z/z
-. $DOTFILES/vendor/z/z.sh
