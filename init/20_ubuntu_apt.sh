@@ -42,6 +42,7 @@ packages=(
   build-essential
   git-core
   libssl-dev
+  y-ppa-manager
 )
 
 packages=($(setdiff "${packages[*]}" "$(dpkg --get-selections | grep -v deinstall | awk '{print $1}')"))
