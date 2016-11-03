@@ -41,8 +41,7 @@ function assert() {
 
 # OS detection
 function is_ubuntu() {
-  [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu ]] ||
-  [[ "$(cat /etc/issue 2> /dev/null)" =~ "Linux Mint" ]] || return 1
+  [[ "$(cat /etc/issue 2> /dev/null)" =~ Ubuntu|Linux\ Mint ]] || return 1
 }
 function get_os() {
   for os in ubuntu; do
